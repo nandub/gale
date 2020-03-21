@@ -1,6 +1,8 @@
 *.o
 *.la
 *.lo
+*.log
+*.scan
 .deps
 .libs
 m4

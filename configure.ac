@@ -231,16 +231,16 @@ AC_SUBST(PROG_LDCONFIG)
 
 AM_CONDITIONAL(BUILD_LIBOOP,test x$build_liboop = xtrue)
 
-AC_OUTPUT(
-	gale-config
-	gale-install
-	Makefile 
-	libgale/Makefile 
-	gsub/Makefile
-	gsend/Makefile
-	kutils/Makefile
-	server/Makefile
-	gdomain/Makefile
-	include/Makefile 
-	include/gale/Makefile
-)
+AC_CONFIG_FILES([gale-config
+  gale-install
+  Makefile
+  liboop/Makefile
+  libgale/Makefile
+  gsub/Makefile
+  gsend/Makefile
+  kutils/Makefile
+  server/Makefile
+  gdomain/Makefile
+  include/Makefile
+  include/gale/Makefile])
+AC_OUTPUT

@@ -3,5 +3,5 @@
 case `uname` in Darwin*) glibtoolize --copy --force ;;
  *) libtoolize --copy --force ;; esac
 
-aclocal && autoheader && automake --add-missing && autoconf
-cd liboop && ./bootstrap
+aclocal && automake --add-missing && autoconf
+
